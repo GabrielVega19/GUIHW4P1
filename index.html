@@ -1,9 +1,18 @@
+<!--
+GUI Assignment: HW4
+Gabriel Vega, UMass Lowell Computer Science, gabriel_vega@student.uml.edu
+-->
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <!-- links to the css used to style the page tailwind css was used to assist in writing the css -->
     <link rel="stylesheet" href="css/output.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
 </head>
 <body>
     <!-- div for the background image that spans the full page and splits it into 2 columns -->
@@ -12,16 +21,16 @@
         <div class="bg-black bg-opacity-50 rounded-lg px-6 py-4 w-52">
             <form id="myForm" class="flex flex-col text-white">
                 <label for="x1">X Start</label> 
-                <input id="x1" class="my-2 bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" type="number" min="-50" max="50" required/>
+                <input id="x1" name="x1" class="my-2 bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" />
 
                 <label for="x2" class="my-2">X End</label> 
-                <input id="x2" class="mb-2 bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" type="number" min="-50" max="50" required/>
+                <input id="x2" name="x2" class="mb-2 bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" />
 
                 <label for="y1" class="my-2">Y Start</label> 
-                <input id="y1" class="mb-2 bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" type="number" min="-50" max="50" required/>
+                <input id="y1" name="y1" class="mb-2 bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" />
 
                 <label for="y2" class="my-2">Y End</label> 
-                <input id="y2" class="bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" type="number" min="-50" max="50" required/>       
+                <input id="y2" name="y2" class="bg-transparent border-b-2 rounded-md text-purple-300" placeholder="-50 to 50" />       
 
                 <p id="errors" class="text-red-500 mt-5 text-sm text-center hidden">Error Field</p>
 
